@@ -2,8 +2,17 @@ import React from 'react'
 import '../Component/WelcomeText.scss'
 
 class WelcomeText extends React.Component {
+
+  text = "Welcome to my page"
+
   render(){
-    return <div> This is where the text will be </div> 
+    return <div className="card">
+    <div className='container'>
+        <h1>
+          {this.text}
+        </h1>
+      </div> 
+    </div>
   }
 }
 
