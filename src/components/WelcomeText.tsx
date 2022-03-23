@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Component/WelcomeText.scss'
+import './WelcomeText.scss'
 
 class WelcomeText extends React.Component {
 
