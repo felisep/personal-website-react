@@ -16,7 +16,10 @@ const Navbar = () =>{
         <Link to="/">Index</Link>
       </li>
       <li>
-        <Link to="/infopage">Some Extra</Link>
+        <Link to="/infopage">Information</Link>
+      </li>
+      <li>
+        <Link to="/api">api</Link>
       </li>
     </ul>
   </div>
