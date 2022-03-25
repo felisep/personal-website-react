@@ -16,7 +16,7 @@ const Navbar = () =>{
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/infopage">Information</Link>
+        <Link data-test="information_btn" to="/infopage">Information</Link>
       </li>
       <li>
         <Link to="/api">api</Link>
