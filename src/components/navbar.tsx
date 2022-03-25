@@ -13,7 +13,7 @@ const Navbar = () =>{
   <div>
     <ul>
       <li>
-        <Link to="/">Index</Link>
+        <Link to="/">Home</Link>
       </li>
       <li>
         <Link to="/infopage">Information</Link>

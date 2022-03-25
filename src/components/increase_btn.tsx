@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
+import './increase_btn.scss'
 
-const Increase_Btn = () => {
-    const [count, setCount] = useState(10);
+const Increase_Btn = ({increaseNumber}: any) => {
+    
 
     return(
     <div>
-        <button onClick={() => setCount(count + 1)}>
+        <a className='button1' onClick={increaseNumber}>
             Click me
-        </button>
-        <p>You clicked {count} times</p>
+        </a>
     </div>
     );
 }
