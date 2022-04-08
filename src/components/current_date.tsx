@@ -1,22 +1,22 @@
-import { cleanup } from '@testing-library/react'
-import React, { useState, useEffect } from 'react'
+import { cleanup } from "@testing-library/react";
+import React, { useState, useEffect } from "react";
 
 const CurrentDate = () => {
-    var [date, setDate] = useState(new Date())
+  var [date, setDate] = useState(new Date());
 
-    useEffect(() => {
-        var timer = setInterval(() => setDate(new Date()), 1000)
+  useEffect(() => {
+    var timer = setInterval(() => setDate(new Date()), 1000);
 
-        return function cleanup() {
-            clearInterval(timer)     
-        }
-    });
+    return function cleanup() {
+      clearInterval(timer);
+    };
+  });
 
-    return (
-        <div>
-            <h1>{date.toLocaleTimeString()}</h1>
-        </div>
-    );
-}
+  return (
+    <div>
+      <h1>{date.toLocaleTimeString()}</h1>
+    </div>
+  );
+};
 
-export default CurrentDate
+export default CurrentDate;
