@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './info_page.scss'
-import Increase_Btn from '../components/increase_btn'
+import IncreaseBtn from '../components/increase_btn'
 
 const InfoPage = () =>{
   const [count, setCount] = useState(0);
@@ -12,7 +12,9 @@ const InfoPage = () =>{
       <p>Welcome to the information page</p>
       <div>
         <p>This is a button element created with function</p>
-        <Increase_Btn increaseNumber={counter}/>
+        <IncreaseBtn 
+          increaseNumber={ counter }
+        />
         <p>You clicked {count} times</p>
       </div>
     </div>

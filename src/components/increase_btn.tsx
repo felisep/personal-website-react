@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './increase_btn.scss'
 
-const Increase_Btn = ({increaseNumber}: any) => {
+const IncreaseBtn = ({increaseNumber}: any) => {
     
 
     return(
     <div>
-        <a className='button1' onClick={increaseNumber}>
+        <button className='button1' onClick={increaseNumber}>
             Click me
-        </a>
+        </button>
     </div>
     );
 }
-export default Increase_Btn;
+export default IncreaseBtn;
